@@ -1,0 +1,88 @@
+*{
+    margin:0;
+    padding:0px;
+    box-sizing: border-box;
+}
+body{
+    background: radial-gradient(black,rgb(0, 0, 50),rgb(0, 0, 100),rgb(0, 0, 150),rgb(0, 0, 200));
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+.container{
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.game{
+/* as per container height i take the 75% height for my game div*/
+    height: 60vmin; 
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5vmin;
+}
+.box{
+   /* as per game div height i give the equal height for every button div*/
+   height: 18vmin;
+   width: 18vmin;
+   border-radius: 1rem;
+   border: none;
+   font-size: 8vmin;
+   color:blue;
+   background-color: rgb(0, 255, 255);
+}
+.heading{
+    color: white;
+    font-size: 50px;
+    padding: 20px;
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+#reset-btn{
+    height: 50px;
+    width: 150px;
+    background-color: black;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-size: 20px;
+    margin: 30px;
+}
+#new-btn{
+    height: 50px;
+    width: 150px;
+    background-color: black;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-size: 20px;
+    margin: 30px;
+    transition: 1s ease-in;
+}
+#reset-btn:hover{
+    background-color: white;
+    color: black;
+}
+#new-btn-btn:hover{
+    background-color: white;
+    color: black;
+}
+.msg-container{
+    height:100vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+}
+.hide{
+    display: none;
+}
+#msg{
+    color: aqua;
+    font-size: 40px;
+}
